@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="刘洋的证书荣誉 —— Python 师资证书、全国青少年科技教育成果展示大赛指导证书、省赛裁判员聘书，以及指导学生获得的省市级竞赛获奖证书。">
+  <title>证书荣誉 · 刘洋</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/honor.css">
+</head>
+<body class="page-honor">
+
+  <!-- ================= 顶部导航 ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">
+          <img src="img/icon.gif" alt="站点图标" width="40" height="40">
+        </span>
+        <span class="logo-text">刘洋 <em>· 个人简历</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <ul>
+          <li><a href="index.html#home">首页</a></li>
+          <li><a href="index.html#about">个人信息</a></li>
+          <li><a href="index.html#works">教学内容</a></li>
+          <li><a href="index.html#resume">基本资料</a></li>
+          <li><a href="honor.html" class="active" aria-current="page">证书荣誉</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= 子页面 Banner（整宽背景区） ================= -->
+  <section class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+
+
+      <h1 class="page-hero-title">证书荣誉</h1>
+      <p class="page-hero-en">CERTIFICATES &amp; HONORS</p>
+      <p class="page-hero-desc">
+        每一张证书背后，
+        都是一段真实的教与学。
+      </p>
+
+
+    </div>
+  </section>
+
+  <!-- 区块内快速跳转 -->
+  <div class="cert-bar">
+    <div class="container cert-bar-inner">
+      <ul class="cert-jump">
+        <li><a href="#personal">个人证书</a></li>
+        <!-- <li><a href="#student">学生获奖证书</a></li> -->
+      </ul>
+      <p class="cert-tip">点击任意证书图片可查看大图</p>
+    </div>
+  </div>
+
+  <!-- ================= 个人证书 ================= -->
+  <section class="zone zone-white" id="personal">
+    <div class="zone-bg" aria-hidden="true"></div>
+    <div class="container">
+      <header class="zone-head">
+        <div>
+          <h2 class="zone-title"><i></i>个人证书</h2>
+          <p class="zone-desc">师资认证，以及个人技能证明。</p>
+        </div>
+        <span class="zone-count"><em id="countPersonal">4</em> 项</span>
+      </header>
+
+      <div class="cert-grid" id="gridPersonal"></div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= 底部引导（深色整宽区） ================= -->
+  <section class="zone zone-dark zone-cta">
+    <div class="zone-bg" aria-hidden="true"></div>
+    <div class="container cta-inner">
+      <h2>想了解这些证书背后的教学经历？</h2>
+      <p>课程体系、带队经历、执裁工作与学生成绩，都在简历里有完整记录。</p>
+      <div class="cta-actions">
+        <a href="index.html#resume" class="btn btn-outline">返回基本资料</a>
+        <a href="index.html" class="cta-link">回到首页 &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <noscript>
+    <p class="noscript-tip">证书照片墙需要启用 JavaScript 才能显示，请开启后刷新页面。</p>
+  </noscript>
+
+  <!-- ================= 页脚 ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">刘洋 · 个人简历</p>
+      <p class="footer-contact">
+        联系电话：17628432239 &nbsp;&nbsp;|&nbsp;&nbsp;
+        联系邮箱：154140710@qq.com &nbsp;&nbsp;|&nbsp;&nbsp;
+        联系地址：四川 · 成都（天府新区）
+      </p>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="index.html#home">首页</a><a href="index.html#about">个人信息</a><a href="index.html#works">教学内容</a><a href="index.html#resume">基本资料</a><a href="honor.html">证书荣誉</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 刘洋 · 仅用于个人求职展示</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="返回顶部">&#8679;</button>
+
+  <!-- ================= 大图查看器 ================= -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lb-backdrop" data-close></div>
+    <button class="lb-btn lb-close" data-close aria-label="关闭大图">&times;</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="上一张">&lsaquo;</button>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="下一张">&rsaquo;</button>
+
+    <figure class="lb-figure" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+      <div class="lb-stage">
+        <img id="lbImg" src="" alt="">
+      </div>
+      <figcaption class="lb-caption">
+        <strong id="lbTitle"></strong>
+        <span id="lbMeta"></span>
+      </figcaption>
+    </figure>
+
+    <p class="lb-count" id="lbCount"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/honor.js"></script>
+</body>
+</html>

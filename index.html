@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport meta：保证移动端正确缩放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="刘洋的个人简历 —— 机器人与少儿编程讲师，四川轻化工大学计算机科学与技术专业本科。">
+  <title>刘洋 · 个人简历</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= 顶部导航 ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="logo" href="#home">
+        <!-- 站标：img/icon.gif（唱片图），尺寸与原「刘」字图标一致（40×40），持续旋转 -->
+        <span class="logo-mark">
+          <img src="img/icon.gif" alt="站点图标" width="40" height="40">
+        </span>
+        <span class="logo-text">刘洋 <em>· 个人简历</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <ul>
+          <li><a href="#home" class="active">首页</a></li>
+          <li><a href="#about">个人信息</a></li>
+          <li><a href="#works">教学体系</a></li>
+          <li><a href="#resume">基本资料</a></li>
+          <!-- 证书荣誉为独立子页面，点击跳转 honor.html -->
+          <li><a href="honor.html">证书荣誉</a></li>
+        </ul>
+      </nav>
+
+      <!-- 移动端汉堡按钮 -->
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= 全屏 Banner ================= -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="hero-hello">你好，这是我个人简历</p>
+        <h1 class="hero-name">刘洋<span class="hero-en">LIU YANG</span></h1>
+        <p class="hero-job">—— 机器人 + 少儿编程讲师 ——</p>
+        <p class="hero-desc">
+          对待教学认真负责，善于沟通与组织，具有较强的团队精神；
+          活泼开朗、乐观上进，希望用编程帮助孩子建立逻辑思维与创造力。
+        </p>
+        <a href="#about" class="btn btn-outline js-more">
+          MORE
+          <!-- 向下矢量图标（内联 SVG，风格对齐 iconfont 的 arrow-down 线性图标） -->
+          <svg class="arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+            <path d="M12 4.5v13.2M5.4 11.6 12 18.2l6.6-6.6"
+                  fill="none" stroke="currentColor" stroke-width="1.7"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-avatar reveal delay-1">
+        <div class="avatar-ring">
+          <!-- 头像：优先加载 WebP / JPEG 压缩版，PNG 为兜底（img src 按 me.png 提供） -->
+          <picture>
+            <source srcset="img/me.webp" type="image/webp">
+            <source srcset="img/me.jpg" type="image/jpeg">
+            <img src="img/me.png" alt="刘洋的个人照片" width="640" height="800">
+          </picture>
+        </div>
+        <p class="avatar-caption">四川轻化工大学 · 计算机科学与技术</p>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ================= 个人信息 ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2>个人信息</h2>
+        <p class="section-dash">&mdash;&mdash;</p>
+        <p class="section-sub">用心教好每一堂课，用代码点亮孩子的创造力</p>
+      </header>
+
+      <div class="about-grid">
+        <!-- 左：基本信息 -->
+        <div class="about-info reveal">
+          <h3 class="info-title">我的简介</h3>
+          <ul class="info-list">
+            <li><i class="dot"></i>姓名：刘洋</li>
+            <li><i class="dot"></i>出生年份：2001 年</li>
+            <li><i class="dot"></i>学历：本科</li>
+            <li><i class="dot"></i>毕业院校：四川轻化工大学</li>
+            <li><i class="dot"></i>所学专业：计算机科学与技术</li>
+            <li><i class="dot"></i>现居地：四川 · 成都（天府新区）</li>
+            <li><i class="dot"></i>电话：17628432239</li>
+            <li><i class="dot"></i>邮箱：154140710@qq.com</li>
+          </ul>
+        </div>
+
+        <!-- 右：技能条 -->
+        <div class="about-skill reveal delay-1">
+          <h3 class="info-title">技能掌握</h3>
+          <div class="skill">
+            <p class="skill-name">C++ / Python / Java 编程语言<span class="skill-pct">85%</span></p>
+            <div class="skill-bar"><i data-width="85"></i></div>
+          </div>
+          <div class="skill">
+            <p class="skill-name">HTML / CSS / JavaScript 前端开发<span class="skill-pct">80%</span></p>
+            <div class="skill-bar"><i data-width="80"></i></div>
+          </div>
+          <div class="skill">
+            <p class="skill-name">Scratch / 机器人课程教学<span class="skill-pct">90%</span></p>
+            <div class="skill-bar"><i data-width="90"></i></div>
+          </div>
+          <div class="skill">
+            <p class="skill-name">AI 工具：codex、cursor<span class="skill-pct">85%</span></p>
+            <div class="skill-bar"><i data-width="85"></i></div>
+          </div>
+          <div class="skill">
+            <p class="skill-name">Office / Photoshop / 剪映<span class="skill-pct">85%</span></p>
+            <div class="skill-bar"><i data-width="85"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 数据统计 -->
+      <ul class="stats reveal">
+        <li><strong>300+</strong><span>累计授课学生</span></li>
+        <li><strong>80%</strong><span>参赛学生获奖率</span></li>
+        <li><strong>6-16 岁</strong><span>教学覆盖年龄段</span></li>
+        <li><strong>2 年+</strong><span>一线教学经验</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= 教学内容 ================= -->
+  <section class="section section-gray" id="works">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2>教学体系</h2>
+        <p class="section-dash">&mdash;&mdash;</p>      </header>
+
+      <div class="works-grid">
+        <article class="work-card reveal">
+          <div class="work-icon" aria-hidden="true">⚙</div>
+          <h3>乐高机械基础课程体系</h3>
+          <p>面向 6-12 岁学生设计趣味搭建项目（杠杆、齿轮、滑轮系统等），帮助学生掌握力学原理与机械结构。</p>
+        </article>
+
+        <article class="work-card reveal delay-1">
+          <div class="work-icon" aria-hidden="true">🤖</div>
+          <h3>智能机器人竞赛课程</h3>
+          <p>机器人搭建与编程教学，涵盖传感器应用、自动化控制及项目实践（避障机器人、巡线机器人等）。</p>
+        </article>
+
+        <article class="work-card reveal delay-2">
+          <div class="work-icon" aria-hidden="true">🧩</div>
+          <h3>Scratch / Python 分层教学</h3>
+          <p>从基础语法到算法设计的分层教学内容，结合游戏开发、数据分析等趣味项目，增强实践能力与学习兴趣。</p>
+        </article>
+
+        <article class="work-card reveal delay-3">
+          <div class="work-icon" aria-hidden="true">🎬</div>
+          <h3>课件插图与教学视频</h3>
+          <p>使用 Photoshop 与剪映独立制作课件插图、教学视频与活动宣传物料，配套 PPT 课件排版设计。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 基本资料：求学 / 工作 ================= -->
+  <section class="section" id="resume">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2>基本资料</h2>
+        <p class="section-dash">&mdash;&mdash;</p>      </header>
+
+      <div class="timeline-grid">
+        <!-- 求学经历 -->
+        <div class="timeline-col reveal">
+          <h3 class="timeline-title">求学经历</h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <time>2020.09 - 2024.06</time>
+              <h4>四川轻化工大学</h4>
+              <p class="timeline-role">计算机科学与技术（本科）</p>
+              <p>主修课程：C++、Python、Java、数据结构与算法。在校期间系统学习编程与算法基础，为后续教学与开发工作打下扎实基础。</p>
+            </li>
+          </ol>
+        </div>
+
+        <!-- 工作经验 -->
+        <div class="timeline-col reveal delay-1">
+          <h3 class="timeline-title">工作经验</h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <time>2024.06 - 至今</time>
+              <h4>四川树仁科教有限责任公司</h4>
+              <p class="timeline-role">机器人 + 少儿编程讲师</p>
+              <ul class="timeline-detail">
+                <li>担任 6-12 岁乐高机械基础课程教师，通过趣味搭建项目（如杠杆、齿轮、滑轮系统）帮助学生掌握力学原理与机械结构。</li>
+                <li>担任 8-14 岁智能机器人课程教师，教授机器人搭建与编程，涵盖传感器应用、自动化控制及项目实践（如避障、巡线机器人），指导多名学生在省级竞赛中获奖。</li>
+                <li>担任 10-16 岁青少年编程教师，讲授 Scratch、Python 编程，设计分层教学内容，结合游戏开发、数据分析等趣味项目提升学生实践能力。</li>
+                <li>带队参加省市级机器人及编程比赛，负责交通、住宿、日程等全程规划与实施，赛前提供技术指导与心理支持，帮助 80% 学生斩获奖项。</li>
+                <li>担任四川省白名单赛事省赛裁判员，执裁多场赛事，协调现场调度与突发状况处理，完成比赛计分与成绩核算。</li>
+                <li>承担天府新区各学校延时课教学，累计教授学生超过 300 人，学生信息素养显著提升。</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 证书荣誉 & 自我评价 ================= -->
+  <section class="section section-dark" id="honor">
+    <div class="container">
+      <header class="section-head reveal">
+        <h2>证书荣誉 &amp; 自我评价</h2>
+        <p class="section-dash">&mdash;&mdash;</p>
+        <p class="section-sub">多年教学积累，从传统课堂到竞赛舞台，磨练出扎实的技术与独特的教学风格</p>
+      </header>
+
+      <div class="honor-grid">
+        <ul class="cert-list reveal">
+          <li><strong>Python 师资证书</strong><span>工业与信息化部教育与考试中心颁发</span></li>
+          <li><strong>全国青少年科技教育成果展示大赛指导证书</strong></li>
+          <li><strong>全国青少年劳动技能与智能设计大赛指导证书</strong></li>
+          <li><strong>机动车驾驶证 C1</strong></li>
+        </ul>
+
+        <ul class="eval-list reveal delay-1">
+          <li>
+            <h4>组织与沟通能力强</h4>
+            <p>性格开朗，有带团队参加省市级比赛的全流程经验，擅长组织课堂活动、带动课堂气氛。</p>
+          </li>
+          <li>
+            <h4>学习能力强</h4>
+            <p>具有良好的分析与解决问题能力，能快速掌握新工具（从 Scratch、Python 到前端与 AI 工具均持续自学上手），善于把复杂问题讲得简单易懂。</p>
+          </li>
+          <li>
+            <h4>热爱少儿教育</h4>
+            <p>2 年多一线教学覆盖 6-16 岁全年龄段，希望用编程帮助孩子建立逻辑思维与创造力。</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 跳转到证书照片墙子页面 -->
+      <p class="honor-more reveal">
+        <a href="honor.html" class="btn btn-outline">查看证书照片墙</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 页脚 ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">刘洋 · 个人简历</p>
+      <p class="footer-contact">
+        联系电话：17628432239 &nbsp;&nbsp;|&nbsp;&nbsp;
+        联系邮箱：154140710@qq.com &nbsp;&nbsp;|&nbsp;&nbsp;
+        联系地址：四川 · 成都（天府新区）
+      </p>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="#home">首页</a><a href="#about">个人信息</a><a href="#works">教学内容</a><a href="#resume">基本资料</a><a href="honor.html">证书荣誉</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 刘洋 · 仅用于个人求职展示</p>
+    </div>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <button class="back-top" id="backTop" aria-label="返回顶部">&#8679;</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
